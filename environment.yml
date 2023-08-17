@@ -4,6 +4,7 @@ dependencies:
   - nbconvert
   - notebook
 pip:
+  - attrs>=22.1.0
   - pydra==0.22
 platforms:
   - linux-64
