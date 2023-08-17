@@ -1,0 +1,10 @@
+channels:
+  - conda-forge
+dependencies:
+  - nbconvert
+  - notebook
+pip:
+  - pydra==0.22
+platforms:
+  - linux-64
+  - osx-64
