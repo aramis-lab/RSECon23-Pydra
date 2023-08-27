@@ -2,6 +2,7 @@ channels:
   - conda-forge
 dependencies:
   - nbconvert>=7.7.4,<8
+  - nbstripout>=0.6.1,<0.7
   - notebook>=7.0.2,<8
 pip:
   - attrs>=22.1.0
