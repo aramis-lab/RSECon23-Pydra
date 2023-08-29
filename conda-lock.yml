@@ -13,8 +13,8 @@
 version: 1
 metadata:
   content_hash:
-    linux-64: 8582dd7b416655107974e93d52c3ac3fab4aad1b45a45f17407ee730e9e52d25
-    osx-64: 2ba2319056d264e459bcf9009bef5bae2a5fcd44786105d178aacb12137041e5
+    linux-64: bd10767e04394cf6551cf954264126adf39737533761c38ef4a6926353a43d52
+    osx-64: a80efed9b13b2f39ab4c29aea284a9ef458c7301fe24cc1bfc006a608338f524
   channels:
   - url: conda-forge
     used_env_vars: []
@@ -857,17 +857,17 @@ package:
   category: main
   optional: false
 - name: rpds-py
-  version: 0.9.2
+  version: 0.10.0
   manager: conda
   platform: linux-64
   dependencies:
     libgcc-ng: '>=12'
     python: '>=3.11,<3.12.0a0'
     python_abi: 3.11.*
-  url: https://conda.anaconda.org/conda-forge/linux-64/rpds-py-0.9.2-py311h46250e7_0.conda
+  url: https://conda.anaconda.org/conda-forge/linux-64/rpds-py-0.10.0-py311h46250e7_0.conda
   hash:
-    md5: bcf66b5abaec47198b42cdd0bb968540
-    sha256: ed9e6eb42ec6f5167ba9912d9260f4b8977441907ec520b3635e10f5241b04ba
+    md5: eab3ba350195576d20dbce6ab6fd8596
+    sha256: 085d61136c63b4b5ab7dd30d41db5981bc48445cab6c5540ea2c32837e35ee0e
   category: main
   optional: false
 - name: send2trash
@@ -1968,6 +1968,62 @@ package:
     sha256: 909a1eb052e5b43afaccb12e57a69337d8173fe31f898687f6adeffb12ac2fec
   category: main
   optional: false
+- name: ci-info
+  version: 0.3.0
+  manager: pip
+  platform: linux-64
+  dependencies: {}
+  url: https://files.pythonhosted.org/packages/13/c3/8ac768b389d5b6dda1c3ce7992b3acd2b46401f9b71439123858b17b1a2c/ci_info-0.3.0-py3-none-any.whl
+  hash:
+    sha256: e9e05d262a6c48aa03cd904475de5ce8c4da8a5435e516631c795d0487dc9e07
+  category: main
+  optional: false
+- name: cloudpickle
+  version: 2.2.1
+  manager: pip
+  platform: linux-64
+  dependencies: {}
+  url: https://files.pythonhosted.org/packages/15/80/44286939ca215e88fa827b2aeb6fa3fd2b4a7af322485c7170d6f9fd96e0/cloudpickle-2.2.1-py3-none-any.whl
+  hash:
+    sha256: 61f594d1f4c295fa5cd9014ceb3a1fc4a70b0de1164b94fbc2d854ccba056f9f
+  category: main
+  optional: false
+- name: filelock
+  version: 3.12.3
+  manager: pip
+  platform: linux-64
+  dependencies: {}
+  url: https://files.pythonhosted.org/packages/52/90/45223db4e1df30ff14e8aebf9a1bf0222da2e7b49e53692c968f36817812/filelock-3.12.3-py3-none-any.whl
+  hash:
+    sha256: f067e40ccc40f2b48395a80fcbd4728262fab54e232e090a4063ab804179efeb
+  category: main
+  optional: false
+- name: etelemetry
+  version: 0.3.0
+  manager: pip
+  platform: linux-64
+  dependencies:
+    requests: '*'
+    ci-info: '>=0.2'
+  url: https://files.pythonhosted.org/packages/8b/1b/a13fd41742cf2ed2498e90e5cdb27239e1115a788114aed0625dbf16737c/etelemetry-0.3.0-py3-none-any.whl
+  hash:
+    sha256: 78febd59a22eb53d052d731f10f24139eb2854fd237348fba683dd8616fb4a67
+  category: main
+  optional: false
+- name: pydra
+  version: '0.22'
+  manager: pip
+  platform: linux-64
+  dependencies:
+    attrs: '>=19.1.0'
+    cloudpickle: '>=2.0.0'
+    etelemetry: '>=0.2.2'
+    filelock: '>=3.0.0'
+  url: https://files.pythonhosted.org/packages/32/3c/327432d8d396e9694de7a2a1f8f7ec701cdbd620fd91542788e3d0df6a6d/pydra-0.22-py3-none-any.whl
+  hash:
+    sha256: b764b147f80e19ca900ab15bbccc2e16529d353019b6d26285a1ba0bd2c2efde
+  category: main
+  optional: false
 - name: bzip2
   version: 1.0.8
   manager: conda
@@ -2678,16 +2734,16 @@ package:
   category: main
   optional: false
 - name: rpds-py
-  version: 0.9.2
+  version: 0.10.0
   manager: conda
   platform: osx-64
   dependencies:
     python: '>=3.11,<3.12.0a0'
     python_abi: 3.11.*
-  url: https://conda.anaconda.org/conda-forge/osx-64/rpds-py-0.9.2-py311h299eb51_0.conda
+  url: https://conda.anaconda.org/conda-forge/osx-64/rpds-py-0.10.0-py311h299eb51_0.conda
   hash:
-    md5: bda1d1d8fce204234ed183b150dd51cc
-    sha256: 18a522598a2d3220a13cafd40ba29d3e66aa67b18354b440bae5b1d04a4364ba
+    md5: a77ff3e67e404a0abe53f590a2940168
+    sha256: 911588ca4bbda3fb40f709755255c127d33a91e112ecab8bd657240b15ba396b
   category: main
   optional: false
 - name: setuptools
@@ -3816,5 +3872,61 @@ package:
   hash:
     md5: b97fc9e73cb1372834f4e7e257120d14
     sha256: 909a1eb052e5b43afaccb12e57a69337d8173fe31f898687f6adeffb12ac2fec
+  category: main
+  optional: false
+- name: ci-info
+  version: 0.3.0
+  manager: pip
+  platform: osx-64
+  dependencies: {}
+  url: https://files.pythonhosted.org/packages/13/c3/8ac768b389d5b6dda1c3ce7992b3acd2b46401f9b71439123858b17b1a2c/ci_info-0.3.0-py3-none-any.whl
+  hash:
+    sha256: e9e05d262a6c48aa03cd904475de5ce8c4da8a5435e516631c795d0487dc9e07
+  category: main
+  optional: false
+- name: cloudpickle
+  version: 2.2.1
+  manager: pip
+  platform: osx-64
+  dependencies: {}
+  url: https://files.pythonhosted.org/packages/15/80/44286939ca215e88fa827b2aeb6fa3fd2b4a7af322485c7170d6f9fd96e0/cloudpickle-2.2.1-py3-none-any.whl
+  hash:
+    sha256: 61f594d1f4c295fa5cd9014ceb3a1fc4a70b0de1164b94fbc2d854ccba056f9f
+  category: main
+  optional: false
+- name: filelock
+  version: 3.12.3
+  manager: pip
+  platform: osx-64
+  dependencies: {}
+  url: https://files.pythonhosted.org/packages/52/90/45223db4e1df30ff14e8aebf9a1bf0222da2e7b49e53692c968f36817812/filelock-3.12.3-py3-none-any.whl
+  hash:
+    sha256: f067e40ccc40f2b48395a80fcbd4728262fab54e232e090a4063ab804179efeb
+  category: main
+  optional: false
+- name: etelemetry
+  version: 0.3.0
+  manager: pip
+  platform: osx-64
+  dependencies:
+    requests: '*'
+    ci-info: '>=0.2'
+  url: https://files.pythonhosted.org/packages/8b/1b/a13fd41742cf2ed2498e90e5cdb27239e1115a788114aed0625dbf16737c/etelemetry-0.3.0-py3-none-any.whl
+  hash:
+    sha256: 78febd59a22eb53d052d731f10f24139eb2854fd237348fba683dd8616fb4a67
+  category: main
+  optional: false
+- name: pydra
+  version: '0.22'
+  manager: pip
+  platform: osx-64
+  dependencies:
+    attrs: '>=19.1.0'
+    cloudpickle: '>=2.0.0'
+    etelemetry: '>=0.2.2'
+    filelock: '>=3.0.0'
+  url: https://files.pythonhosted.org/packages/32/3c/327432d8d396e9694de7a2a1f8f7ec701cdbd620fd91542788e3d0df6a6d/pydra-0.22-py3-none-any.whl
+  hash:
+    sha256: b764b147f80e19ca900ab15bbccc2e16529d353019b6d26285a1ba0bd2c2efde
   category: main
   optional: false
